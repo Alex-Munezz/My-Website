@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
+.logo{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  animation: colorChange 5s infinite;
+}
+h2, h3{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.image-container{
+  width: 200px;
+  height: 660px;
+  display: block;
+  margin-left: 34%;
+}
+.image{
+    width: 300%;
+    height: auto;
+}
+.content-container {
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  50% {color: white}
+  75% { color: orange; }
+  100% { color: purple; }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  margin-top: 20px; /* Add some spacing from the content above */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.card h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card img {
+  width: 320px;
+  height: 200px;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card img:hover {
+  transform: scale(1.2); /* Enlarge the image to 1.2 times its original size */
+}
+
+
