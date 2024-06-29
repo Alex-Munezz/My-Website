@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5da642b.css",
+    "main.js": "/static/js/main.cac31dfa.js",
+    "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
+    "static/media/My-CV.pdf": "/static/media/My-CV.6c27bce0b23cec1df70f.pdf",
+    "static/media/munezz.png": "/static/media/munezz.2011a9f5546ba1535937.png",
+    "static/media/munezz4.png": "/static/media/munezz4.09f4756ca7ff8b19abb9.png",
+    "static/media/tailwind.png": "/static/media/tailwind.b1114874ab7dad8ad8b7.png",
+    "static/media/python and flask.png": "/static/media/python and flask.f3b16c7c60b40fce6f24.png",
+    "static/media/html, css, js.png": "/static/media/html, css, js.e5f2dad12d30ffb2e390.png",
+    "static/media/AM.png": "/static/media/AM.57db07ed6eb50d325370.png",
+    "static/media/react.png": "/static/media/react.90a048431c035f7f4c7d.png",
+    "static/media/postgre.png": "/static/media/postgre.aca43dc943b0c82ac4e2.png",
+    "static/media/mysql.png": "/static/media/mysql.44d4ae3af94671c9ae88.png",
+    "index.html": "/index.html",
+    "main.e5da642b.css.map": "/static/css/main.e5da642b.css.map",
+    "main.cac31dfa.js.map": "/static/js/main.cac31dfa.js.map",
+    "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5da642b.css",
+    "static/js/main.cac31dfa.js"
+  ]
+}
