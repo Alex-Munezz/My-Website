@@ -78,7 +78,7 @@ const redirectToLinkedIn = () => {
 
   return (
     <div className="App">
-      <div className="logo">
+      <div className="flex justify-center items-center h-screen logo">
         <img src={AM} alt="my logo" className='logo' />
       </div>
       <div className="typing-container">
@@ -87,14 +87,14 @@ const redirectToLinkedIn = () => {
       !!Welcome to my portfolio!!
     </h1>
   </div><br />
-      <h2 className='about'>About Myself:</h2>
-      <div className="image-container">
-        <img className="image" src={slides[currentSlide]} alt="" />
+      <h2 className='about text-3xl'>About Myself:</h2><br />
+      <div className="flex justify-center items-center">
+        <img className="w-30 h-80" src={slides[currentSlide]} alt="" />
       </div>
       <br></br>
       <br></br>
       <div className="content-container" ref={contentRef}>
-        <p className='aboutp'>
+        <p className='ml-2'>
           I'm Alex Munene Murithi, a passionate Full Stack Software Engineer
            with expertise in building scalable and user friendly web applications. <br />
            I have over 1 year of experience in developing dynamic web applications and services with strong foundation in both front-end and back-end
@@ -107,10 +107,10 @@ const redirectToLinkedIn = () => {
           applications.<br />
 
         </p>
+        <br /><br />
+        <h3 className='text-2xl font-bold lang'>Languages and Frameworks I Code With:</h3>
         <br />
-        <h3 className='lang'>Languages and Frameworks I Code With:</h3>
-        <br />
-        <div className="card-container">
+        <div className="lg:grid grid-cols-2 xl:grid-cols-4 ml-14 card-container">
           <div className="card">
             <img src={htmlIcon} alt="HTML" />
             <h5>HTML, CSS, JS</h5>
@@ -127,68 +127,68 @@ const redirectToLinkedIn = () => {
             <img src={pythonIcon} alt="Python" />
             <h5>PYTHON & FLASK</h5>
           </div>
-          </div>
-          <h2 className='lang'>Database Management:</h2>
-          <div className='card-container'>
-          <div className="card">
+          </div><br /><br />
+          <h2 className='lang font-bold text-3xl'>Database Management:</h2><br />
+          <div className='lg:grid grid-cols-3 xl:grid-cols-3 card-container'>
+          <div className="ml-14 card">
             <img src={sqlIcon} alt="SQL" />
             <h5>SQL</h5>
           </div>
-          <div className="card">
+          <div className="ml-14 card">
             <img src={mysql} alt="SQL" />
             <h5>My SQL</h5>
           </div>
-          <div className="card">
+          <div className="ml-14 card">
             <img src={PostgreSQL} alt="SQL" />
             <h5> PostgreSQL</h5>
           </div>
         </div>
-        <br />
-        <h4>Socials:</h4>
+        <br /><br /><br /><br />
+        <h4 className='flex justify-center text-4xl font-bold'>Socials:</h4><br />
         <ul>
-          <div className='social1'>
+          <div className='lg:grid grid-cols-3 xl:grid-cols-3 ml-40 social1'>
           <li>
             <button className='button1' onClick={redirectToInsta}>
-              <FontAwesomeIcon icon={faInstagram} /> Instagram
+              <FontAwesomeIcon icon={faInstagram} /> 
             </button>
           </li>
           <li>
             <button className='button2' onClick={redirectToWhatsApp}>
-             <FontAwesomeIcon icon={faWhatsapp} /> Whatsapp
+             <FontAwesomeIcon icon={faWhatsapp} /> 
             </button>
           </li>
           <li>
             <button className='button4' onClick={redirectToLinkedIn}>
-              <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+              <FontAwesomeIcon icon={faLinkedin} />
             </button>
-          </li></div>
-          <p>Check out my GitHub account to see my other projects:</p>
+          </li></div><br /><br />
+          <p className='ml-4'>Check out my GitHub account to see my other projects:</p>
           <li>
-            <button className='button3' onClick={redirectToGithub}>
-              <FontAwesomeIcon icon={faGithub} /> GitHub
+            <button className='button3 ml-6' onClick={redirectToGithub}>
+              <FontAwesomeIcon icon={faGithub} /> 
             </button>
           </li>
         </ul>
        
-        <div className="container download-cv">
-        <p className='formp'>Download my CV for more information and reference: </p>
-        <button className="cv" onClick={downloadCV}>
-          <img src={download} alt='' />
+        <div className="container download-cv ">
+        <p className='formp ml-4'>Download my CV for more information and reference: </p><br />
+        <button className="cv ml-8" onClick={downloadCV}>
+          <img src={download} className='ml-1' alt='' />
           </button>
       </div>
-      <p className='formp'>
+      <p className='ml-4 formp'>
           If you want to reach out for inquiries and projects, 
           please fill in and submit the form below and I would be happy and glad to be 
           able to make your website bloom.
-        </p>
+        </p><br /><br />
       <div className="form">
-        <h2>Contact Me</h2>
+        <h2 className='text-2xl font-bold'>Contact Me</h2>
         <form action="https://formspree.io/f/manwwonz" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="_replyto" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
           <button type="submit">
-          <img src={send} alt='' className='send'/>
+          <img src={send} alt=''/>
           </button>
         </form>
       </div>

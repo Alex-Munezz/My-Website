@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   padding: 0;
   color: white;
@@ -9,34 +9,17 @@ body {
 .logo {
   text-align: center;
 }
-
 h1 {
   text-align: center;
   font-family: monospace;
   font-size: 50px;
+  animation: colorChange 5s infinite;
 }
 
 h2, h3 {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
-
-.image-container {
-  width: 200px;
-  height: 500px;
-  margin-left: 60vh;
-}
-
-.image {
-  width: 250%;
-  height: 80vh;
-}
-
-.content-container {
-  margin-left: 70px;
-  margin-right: 50px;
-}
-
 @keyframes colorChange {
   0% { color: red; }
   25% { color: blue; }
@@ -45,25 +28,11 @@ h2, h3 {
   75% { color: orange; }
   100% { color: purple; }
 }
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.card h4 {
+.card h5 {
   margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
+  margin-left: 15vh;
 }
 
 .card img {
@@ -73,57 +42,37 @@ h2, h3 {
 }
 
 .card img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
-.typing-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: colorChange 5s infinite;
-  animation-delay: 3.2s;
-}
-
-.typing-text {
-  font-size: 3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: .15em solid #000;
-  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
 
 .button1, .button2, .button3, .button4 {
-  height: 7vh;
-  width: 15vh;
   border-radius: 5vh;
   color: white;
 }
 
 .button1 {
   background-color: #eb3f67;
+  width: 10vh;
+  height: 8vh;
 }
 
 .button2 {
-  color: #000;
-  background-color: #40e504;
+  background-color: #3ada00;
+  width: 10vh;
+  height: 8vh;
 }
 
 .button3 {
   background-color: #000000;
+  width: 15vh;
+  height: 8vh;
 }
 
 .button4 {
   background-color: #3b1cd4;
+  width: 10vh;
+  height: 8vh;
 }
 
 .cv {
@@ -178,7 +127,6 @@ h2, h3 {
 
 .download-cv {
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .download-cv button {
@@ -192,192 +140,4 @@ h2, h3 {
 
 .download-cv button:hover {
   background-color: #0fb300;
-}
-
-@media (max-width: 992px) {
-  .logo{
-    margin-left: 10vh;
-  }
-  .typing-text{
-    margin-left: 10vh;
-    margin-top: 25vh;
-  }
-  .about{
-    font-size: 2.5em;
-    margin-left: 10vh;
-  }
-  .content-container {
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-  .image {
-    width: 145vh;
-    height: 100vh;
-    margin-left:-60vh;
-  }
-  .image-container{
-    height: auto;
-  }
-  .lang{
-    font-size: 2em;
-    margin-left: 15vh;
-  }
-  .card-container{
-    margin-left:12vh;
-  }
-  .social1{
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo{
-    width: 167vh;
-    height: 100vh;
-  }
-  .typing-text {
-    font-size: 8vh;
-    margin-left: 30vh;
-  }
-  .about{
-    font-size: 7vh;
-    margin-left: 30vh;
-  }
-  .image-container {
-    width: 85vh;
-    height: auto;
-    margin-left:-3vh;
-  }
-  .content-container {
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-  .image {
-    height: 130vh;
-  }
-  .aboutp{
-    margin-left: 10vh;
-  }
-  .lang{
-    margin-left: 35vh;
-  }
-  .card-container{
-    display: block;
-    margin-left: 30vh;
-  }
-  .social1{
-    width: 90vh;
-    display: flex;
-  }
-  .formp{
-    margin-left: 25vh;
-  }
-  .cv{
-    margin-left: 25vh;
-  }
-  .form{
-    margin-left: 20vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo{
-    width:112vh;
-    height: 90vh;
-  }
-  .typing-text {
-    font-size:5vh;
-    width:120vh;
-    margin-left: 5vh;
-  }
-  .image-container {
-    width: 100%;
-    height: auto;
-    margin-left:3vh;
-  }
-  .image {
-    width: 100%;
-    height: auto;
-  }
-  .content-container {
-    margin-left: 10px;
-    /* margin-right: 10px; */
-  }
-  .aboutp{
-    margin-left: 3vh;
-  }
-  .lang{
-    margin-left: 5vh;
-  }
-  .card-container{
-    display: block;
-    margin-left: 10vh;
-  }
-  .social1{
-    display: flex;
-  }
-  .form {
-    margin-left:-0.5vh;
-    /* margin-right: 10px; */
-  }
-  .formp{
-    margin-left: 2vh;
-  }
-  .cv {
-    height: 10vh;
-    width: 9vh;
-  }
-  .button1, .button2, .button3, .button4 {
-    height: 10vh;
-    width: 20vh;
-  }
-}
-
-@media (max-width: 375px) {
-  .logo{
-    width:68vh
-  }
-  .typing-text {
-    font-size: 3.2vh;
-    margin-left: 1vh;
-    margin-top: 15vh;
-  }
-  .about{
-    margin-left: 2vh;
-    margin-top: 10vh;
-  }
-  .image-container{
-    margin-left: 1vh;
-    width: 65vh;
-  }
-  .aboutp{
-    margin-left: 1vh
-  }
-  .lang{
-    margin-left: 2vh
-  }
-  .card-container{
-    display: block;
-    margin-left: 1vh;
-  }
-  .button1, .button2, .button3, .button4 {
-    height: 9vh;
-    width: 20vh;
-  }
-  .cv {
-    height: 8vh;
-    width: 9vh;
-    margin-left: 2vh;
-  }
-  .formp {
-    /* padding: 75px; */
-    margin-left: 4vh;
-  }
-  .form{
-    width:55vh
-  }
-  .social1{
-    display: flex;
-    margin-left:-3vh;
-  }
 }
