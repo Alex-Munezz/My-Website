@@ -147,34 +147,44 @@ const redirectToLinkedIn = () => {
         <h4 className='flex justify-center text-4xl font-bold'>Socials:</h4><br />
         <ul>
           <div className='lg:grid grid-cols-3 xl:grid-cols-3 ml-40 social1'>
-          <li>
-            <button className='button1' onClick={redirectToInsta}>
-              <FontAwesomeIcon icon={faInstagram} /> 
-            </button>
-          </li>
-          <li>
-            <button className='button2' onClick={redirectToWhatsApp}>
-             <FontAwesomeIcon icon={faWhatsapp} /> 
-            </button>
-          </li>
-          <li>
-            <button className='button4' onClick={redirectToLinkedIn}>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </button>
-          </li></div><br /><br />
+  <li>
+    <button className="social-btn social-btn1" onClick={redirectToInsta}>
+      <FontAwesomeIcon icon={faInstagram} className="social-btn__icon" />
+      <span className="social-btn__text"><FontAwesomeIcon icon={faInstagram}/> Instagram</span>
+    </button>
+  </li>
+  <li>
+    <button className="social-btn social-btn2" onClick={redirectToWhatsApp}>
+      <FontAwesomeIcon icon={faWhatsapp} className="social-btn__icon" />
+      <span className="social-btn__text"> <FontAwesomeIcon icon={faWhatsapp}/> WhatsApp</span>
+    </button>
+  </li>
+  <li>
+    <button className="button2 social-btn social-btn4" onClick={redirectToLinkedIn}>
+      <FontAwesomeIcon icon={faLinkedin} className="social-btn__icon" />
+      <span className="social-btn__text"><FontAwesomeIcon icon={faLinkedin}/> LinkedIn</span>
+    </button>
+  </li>
+  </div>
+  </ul>
+
+          <br /><br />
           <p className='ml-4'>Check out my GitHub account to see my other projects:</p>
-          <li>
-            <button className='button3 ml-6' onClick={redirectToGithub}>
-              <FontAwesomeIcon icon={faGithub} /> 
-            </button>
+        <ul>  <li>
+          <button className="social-btn social-btn3 ml-6 button3" onClick={redirectToGithub}>
+      <FontAwesomeIcon icon={faGithub} className="social-btn__icon" />
+      <span className="social-btn__text"><FontAwesomeIcon icon={faGithub}/> GitHub</span>
+    </button>
           </li>
-        </ul>
+          </ul>
        
         <div className="container download-cv ">
         <p className='formp ml-4'>Download my CV for more information and reference: </p><br />
-        <button className="cv ml-8" onClick={downloadCV}>
-          <img src={download} className='ml-1' alt='' />
-          </button>
+        <button className="cv ml-8 relative" onClick={downloadCV}>
+  <img src={download} className="cv__image ml-1" alt="Download Icon" />
+  <span className="cv__text">Download CV</span>
+</button>
+
       </div>
       <p className='ml-4 formp'>
           If you want to reach out for inquiries and projects, 
@@ -187,9 +197,10 @@ const redirectToLinkedIn = () => {
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="_replyto" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">
-          <img src={send} alt=''/>
-          </button>
+          <button type="submit" class="button">
+    <img src={send} alt="Send Icon" class="button__image" />
+    <span class="button__text">Send Your Message 😊</span>
+  </button>
         </form>
       </div>
     </div>
