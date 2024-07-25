@@ -173,7 +173,7 @@ const redirectToLinkedIn = () => {
         <div className="container download-cv ">
         <p className='formp ml-4'>Download my CV for more information and reference: </p><br />
         <button className="cv ml-8" onClick={downloadCV}>
-          <img src={download} className='ml-3' alt='' />
+          <img src={download} className='ml-1' alt='' />
           </button>
       </div>
       <p className='ml-4 formp'>
