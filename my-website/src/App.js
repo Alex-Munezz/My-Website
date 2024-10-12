@@ -1,20 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import img from './munezz.png';
-import img2 from './munezz4.png'; // Replace with the correct file extension
+import img from './images/munezz.png';
+import img2 from './images/munezz4.png'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import htmlIcon from './html, css, js.png';
-import reactIcon from './react.png';
-import pythonIcon from './python and flask.png';
-import sqlIcon from './sql.png';
-import tailwind from './tailwind.png';
-import mysql from './mysql.png';
-import PostgreSQL from './postgre.png';
-import AM from './AM.png';
-import myCV from './My-CV.pdf';
-import download from './download.png';
-import send from './send.png';
+import htmlIcon from './images/html, css, js.png';
+import reactIcon from './images/react.png';
+import pythonIcon from './images/python and flask.png';
+import sqlIcon from './images/sql.png';
+import tailwind from './images/tailwind.png';
+import mysql from './images/mysql.png';
+import PostgreSQL from './images/postgre.png';
+import myCV from './Alex-Munene-CV.pdf';
+import download from './images/download.png';
+import send from './images/send.png';
+import bgImage from './images/munezz1.png';
+import Navbar from './Navbar';
+import Projects from './Projects';
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -78,9 +80,18 @@ const redirectToLinkedIn = () => {
 
   return (
     <div className="App">
-      <div className="flex justify-center items-center h-screen logo">
-        <img src={AM} alt="my logo" className='logo' />
-      </div>
+            <Navbar />
+
+{/* Hero Section */}
+<div className="relative h-screen w-full flex items-center justify-center bg-cover bg-center" 
+  style={{ backgroundImage: `url(${bgImage})` }}>
+  <div className="absolute inset-0 bg-black opacity-50 blur-sm"></div>
+  <div className="relative z-10 text-center">
+    <h3 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+      Alex Murithi
+    </h3>
+  </div>
+</div>
       <div className="typing-container">
     <h1 className="typing-text">
       Hey👋
@@ -94,19 +105,16 @@ const redirectToLinkedIn = () => {
       <br></br>
       <br></br>
       <div className="content-container" ref={contentRef}>
-        <p className='ml-2'>
-          I'm Alex Munene Murithi, a passionate Full Stack Software Engineer
-           with expertise in building scalable and user friendly web applications. <br />
-           I have over 1 year of experience in developing dynamic web applications and services with strong foundation in both front-end and back-end
-          technologies that i gained while i was in  <a href="https://www.moringaschool.com">Moringa School  </a>  
-          for my six month bootcamp that started in February 2023 - August 2023, then i graduated in November 2023.<br />
-          I have also worked on a few personal projects and for other clients as well which have equipped
-          me with strong problem solving skills, and adept coding skills.
-         <br /> I am always eager to learn and adopt new tools, Languages and frameworks.
-          I have a passion for developing and I am proficient in Designing, Creating, Deploying, and maintaining scalable Services in websites and web
-          applications.<br />
+      <p className='ml-2'>
+  Hey there! I'm Alex Munene Murithi, your go-to Full Stack Software Engineer with a love for crafting both the front and back ends of the digital world. 🎨💻 
+  I take your Figma designs and wildest ideas, and turn them into sleek, scalable, and downright awesome web applications. 🚀✨ <br /><br />
+  With over a year of experience under my belt, I’ve become fluent in the language of the web. I’m talking about everything from dynamic interfaces to robust services — all thanks to my six-month, adrenaline-fueled bootcamp at <a href="https://www.moringaschool.com">Moringa School</a>! February 2023 to August 2023, those months were a whirlwind of coding marathons and mind-blowing discoveries. 🎓 And guess what? I officially graduated in November 2023. 🎉<br /><br />
+  
+  I’ve also been busy building cool projects for myself and clients, which has sharpened my problem-solving ninja skills 🥷 and coding chops. Whether it's solving complex challenges or writing elegant code, I’m always ready to tackle something new. <br /><br />
+  
+  I’m a lifelong learner, constantly on the lookout for new tools, languages, and frameworks to add to my arsenal. I’m all about designing, creating, deploying, and maintaining web apps that don’t just look good but perform like a dream. Let’s bring your ideas to life, one line of code at a time! 😎💡
+</p>
 
-        </p>
         <br /><br />
         <h3 className='text-2xl font-bold lang'>Languages and Frameworks I Code With:</h3>
         <br />
@@ -143,6 +151,9 @@ const redirectToLinkedIn = () => {
             <h5> PostgreSQL</h5>
           </div>
         </div>
+        <br /><br /><br /><br />
+        <Projects />
+        
         <br /><br /><br /><br />
         <h4 className='flex justify-center text-4xl font-bold'>Socials:</h4><br />
         <ul>
